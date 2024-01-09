@@ -73,3 +73,12 @@ a{
 .header-active{
   color: green;
 }
+
+.scroll-to-top-button{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  position: fixed;
+  right: 200px;
+  bottom: 100px;
+}

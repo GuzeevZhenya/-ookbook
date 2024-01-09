@@ -6,7 +6,9 @@ import { Home } from "./Components/Pages/Home/Home";
 import { About } from "./Components/Pages/About/About";
 import { Contact } from "./Components/Pages/Contact/Contact";
 import { NotFound } from "./Components/Pages/NotFound/NotFound";
-import { Movie } from "./Components/Pages/Movie/Movie";
+import { Category } from "./Components/Pages/Category/Category";
+import ScrollToTopButton from "./Components/utils/scrollToTop";
+import { Recipe } from "./Components/Pages/Recipe/Recipe";
 
 function App() {
   return (
@@ -17,9 +19,11 @@ function App() {
         <Route path={"/home"} element={<Home />} />
         <Route path={"/about"} element={<About />} />
         <Route path={"/contacts"} element={<Contact />} />
-        <Route path={"/movies/:title"} element={<Movie />} />
+        <Route path={"/category/:name"} element={<Category />} />
+        <Route path={"/meal/:id"} element={<Recipe />} />
         <Route path={"*"} element={<NotFound />} />
       </Routes>
+      <ScrollToTopButton />
       <Footer />
     </div>
   );
